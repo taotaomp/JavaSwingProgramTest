@@ -1,4 +1,4 @@
-package com.PApudding.Example13_3;
+ï»¿package com.PApudding.Example13_3;
 
 import java.awt.Component;
 import java.awt.Container;
@@ -12,28 +12,28 @@ import javax.swing.WindowConstants;
 
 /***
  * p230
- * ÔÚÏîÄ¿ÖĞ´´½¨ÊµÏÖIcon½Ó¿ÚµÄDrawIconÀà£¬¸ÃÀàÊµÏÖ×Ô¶¨ÒåµÄÍ¼±êÀà
+ * åœ¨é¡¹ç›®ä¸­åˆ›å»ºå®ç°Iconæ¥å£çš„DrawIconç±»ï¼Œè¯¥ç±»å®ç°è‡ªå®šä¹‰çš„å›¾æ ‡ç±»
  * @author ataoD
  *
  */
 public class DrawIcon implements Icon{
-	private int width;		//ÉùÃ÷Í¼±êµÄ¿í
-	private int height;		//ÉùÃ÷Í¼±êµÄ³¤
+	private int width;		//å£°æ˜å›¾æ ‡çš„å®½
+	private int height;		//å£°æ˜å›¾æ ‡çš„é•¿
 	
-	public int getIconHeight() {	//ÊµÏÖ½Ó¿ÚÄÚgetIconHeight()·½·¨
+	public int getIconHeight() {	//å®ç°æ¥å£å†…getIconHeight()æ–¹æ³•
 		return this.height;
 	}
-	public int getIconWidth() {		//ÊµÏÖ½Ó¿ÚÄÚgetIconWidth()·½·¨
+	public int getIconWidth() {		//å®ç°æ¥å£å†…getIconWidth()æ–¹æ³•
 		return this.width;		
 	}
 	
-	public DrawIcon(int width, int height) {	//¶¨Òå¹¹Ôì·½·¨
+	public DrawIcon(int width, int height) {	//å®šä¹‰æ„é€ æ–¹æ³•
 		this.height = height;
 		this.width = width;
 	}
 	
-	public void paintIcon(Component c, Graphics g, int x, int y) {		//ÊµÏÖ½Ó¿ÚÄÚprintIcon()·½·¨
-		g.fillOval(x, y, width, height);		//»æÖÆÒ»¸öÔ²ĞÎ
+	public void paintIcon(Component c, Graphics g, int x, int y) {		//å®ç°æ¥å£å†…printIcon()æ–¹æ³•
+		g.fillOval(x, y, width, height);		//ç»˜åˆ¶ä¸€ä¸ªåœ†å½¢
 	}
 	
 	public static void main(String[] args) {
@@ -45,8 +45,8 @@ public class DrawIcon implements Icon{
 		jf.setVisible(true);
 		jf.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 		
-		//´´½¨Ò»¸ö±êÇ©£¬²¢ÉèÖÃ±êÇ©ÉÏµÄÎÄ×ÖÔÚ±êÇ©ÕıÖĞ¼ä
-		JLabel jl = new JLabel("²âÊÔ",icon,SwingConstants.CENTER);
+		//åˆ›å»ºä¸€ä¸ªæ ‡ç­¾ï¼Œå¹¶è®¾ç½®æ ‡ç­¾ä¸Šçš„æ–‡å­—åœ¨æ ‡ç­¾æ­£ä¸­é—´
+		JLabel jl = new JLabel("æµ‹è¯•",icon,SwingConstants.CENTER);
 		jl.setBounds(50, 50, 50, 50);
 		container.add(jl);
 	}

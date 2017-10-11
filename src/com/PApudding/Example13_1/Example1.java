@@ -1,4 +1,4 @@
-package com.PApudding.Example13_1;
+ï»¿package com.PApudding.Example13_1;
 
 import java.awt.Color;
 import java.awt.Container;
@@ -9,29 +9,29 @@ import javax.swing.SwingConstants;
 import javax.swing.WindowConstants;
 
 /***
- * ÔÚÏîÄ¿ÖĞ´´½¨Example1Àà£¬¸ÃÀà¼Ì³ĞJFrameÀà³ÉÎª´°ÌåÀà£¬ÔÙ¸ÄÀàÖĞ´´½¨±êÇ©×é¼ş£¬²¢Ìí¼Óµ½´°Ìå½çÃæÖĞ
+ * åœ¨é¡¹ç›®ä¸­åˆ›å»ºExample1ç±»ï¼Œè¯¥ç±»ç»§æ‰¿JFrameç±»æˆä¸ºçª—ä½“ç±»ï¼Œå†æ”¹ç±»ä¸­åˆ›å»ºæ ‡ç­¾ç»„ä»¶ï¼Œå¹¶æ·»åŠ åˆ°çª—ä½“ç•Œé¢ä¸­
  * @author ataoD
  *
  */
 public class Example1 extends JFrame{
 	public void CreatJFrame(String title) {
-		JFrame jf = new JFrame(title);		//ÊµÀı»¯JFrame¶ÔÏó£¬title Îª´°¿Ú±êÌâ
-		Container container = jf.getContentPane();	//ÓÃJFrame¶ÔÏóµÄ¡°»ñÈ¡ÈİÆ÷·½·¨¡±ÊµÀı»¯Ò»¸öÈİÆ÷
-		JLabel jl = new JLabel("ÕâÊÇÒ»¸öJFrame´°Ìå");
-		//Ê¹±êÇ©ÉÏµÄÎÄ×Ö¾ÓÖĞ
+		JFrame jf = new JFrame(title);		//å®ä¾‹åŒ–JFrameå¯¹è±¡ï¼Œtitle ä¸ºçª—å£æ ‡é¢˜
+		Container container = jf.getContentPane();	//ç”¨JFrameå¯¹è±¡çš„â€œè·å–å®¹å™¨æ–¹æ³•â€å®ä¾‹åŒ–ä¸€ä¸ªå®¹å™¨
+		JLabel jl = new JLabel("è¿™æ˜¯ä¸€ä¸ªJFrameçª—ä½“");
+		//ä½¿æ ‡ç­¾ä¸Šçš„æ–‡å­—å±…ä¸­
 		jl.setHorizontalAlignment(SwingConstants.CENTER);
 		
-		container.add(jl);					//Ìí¼Ó±êÇ©µ½ÈİÆ÷ÖĞ
+		container.add(jl);					//æ·»åŠ æ ‡ç­¾åˆ°å®¹å™¨ä¸­
 		container.setBackground(Color.white);
 		
-		jf.setVisible(true); 				//Ê¹´°Ìå¿ÉÊÓ
-		jf.setSize(200, 150);				//ÉèÖÃ´°Ìå´óĞ¡
-		//ÉèÖÃ´°Ìå¹Ø±Õ·½Ê½
+		jf.setVisible(true); 				//ä½¿çª—ä½“å¯è§†
+		jf.setSize(200, 150);				//è®¾ç½®çª—ä½“å¤§å°
+		//è®¾ç½®çª—ä½“å…³é—­æ–¹å¼
 		jf.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 	}
 	public static void main(String[] args) {
-		// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
-		new Example1().CreatJFrame("´´½¨Ò»¸öJFrame´°Ìå");
+		// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ–¹æ³•å­˜æ ¹
+		new Example1().CreatJFrame("åˆ›å»ºä¸€ä¸ªJFrameçª—ä½“");
 	}
 
 }

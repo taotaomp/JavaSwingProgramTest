@@ -1,4 +1,4 @@
-package com.PApudding.Example13_2;
+ï»¿package com.PApudding.Example13_2;
 
 import java.awt.Container;
 import java.awt.event.ActionEvent;
@@ -13,24 +13,24 @@ import javax.swing.WindowConstants;
 public class MyFrame extends JFrame{
 		public MyFrame() {
 			 JFrame jf = new JFrame();
-			 Container container = jf.getContentPane();		//´´½¨Ò»¸öÈİÆ÷
+			 Container container = jf.getContentPane();		//åˆ›å»ºä¸€ä¸ªå®¹å™¨
 			 container.setLayout(null);
 			 jf.setVisible(true);
 			 jf.setSize(200, 150);
 			 jf.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 			 
-			 JLabel jl = new JLabel("ÕâÊÇÒ»¸öJFrame´°Ìå");
-			 //½«±êÇ©µÄÎÄ×ÖÖÃÓÚ±êÇ©ÖĞ¼äÎ»ÖÃ
+			 JLabel jl = new JLabel("è¿™æ˜¯ä¸€ä¸ªJFrameçª—ä½“");
+			 //å°†æ ‡ç­¾çš„æ–‡å­—ç½®äºæ ‡ç­¾ä¸­é—´ä½ç½®
 			 jl.setHorizontalAlignment(SwingConstants.CENTER);
 			 container.add(jl);
 			 
-			 JButton bl = new JButton("µ¯³ö¶Ô»°¿ò");
+			 JButton bl = new JButton("å¼¹å‡ºå¯¹è¯æ¡†");
 			 bl.setBounds(10, 10, 100, 21);
-			 bl.addActionListener(new ActionListener() {	//Îª°´Å¥Ìí¼ÓÊó±êµ¥»ú°´Å¥ÊÂ¼ş
+			 bl.addActionListener(new ActionListener() {	//ä¸ºæŒ‰é’®æ·»åŠ é¼ æ ‡å•æœºæŒ‰é’®äº‹ä»¶
 				
 				@Override
 				public void actionPerformed(ActionEvent e) {
-					//Ê¹MyJDialog´°Ìå¿É¼û
+					//ä½¿MyJDialogçª—ä½“å¯è§
 					new MyJDialog(MyFrame.this).setVisible(true);
 				}
 			});

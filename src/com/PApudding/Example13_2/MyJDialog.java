@@ -1,4 +1,4 @@
-package com.PApudding.Example13_2;
+ï»¿package com.PApudding.Example13_2;
 
 import java.awt.Container;
 
@@ -6,14 +6,14 @@ import javax.swing.*;
 
 public class MyJDialog extends JDialog {
 /***
- * ÔÚÏîÄ¿ÖĞ´´½¨MyJDialogÀà£¬¸ÃÀà¼Ì³ĞJDialog´°Ìå£¬²¢ÔÙ´°¿ÚÖĞÌí¼Ó°´Å¥£¬µ±ÓÃ»§µ¥»÷¸Ã°´Å¥ºó£¬½«µ¯³öÒ»¸ö¶Ô»°¿ò´°Ìå¡£
+ * åœ¨é¡¹ç›®ä¸­åˆ›å»ºMyJDialogç±»ï¼Œè¯¥ç±»ç»§æ‰¿JDialogçª—ä½“ï¼Œå¹¶å†çª—å£ä¸­æ·»åŠ æŒ‰é’®ï¼Œå½“ç”¨æˆ·å•å‡»è¯¥æŒ‰é’®åï¼Œå°†å¼¹å‡ºä¸€ä¸ªå¯¹è¯æ¡†çª—ä½“ã€‚
  * @param args
  */
 	public MyJDialog(MyFrame frame) {
-		//ÊµÀı»¯Ò»¸öJDialogÀà¶ÔÏó£¬Ö¸¶¨¶Ô»°¿òµÄ¸¸ÈİÆ÷¡¢´°Ìå±êÌâºÍÀàĞÍ
-		super(frame,"µÚÒ»¸öJDialog´°Ìå",true);
+		//å®ä¾‹åŒ–ä¸€ä¸ªJDialogç±»å¯¹è±¡ï¼ŒæŒ‡å®šå¯¹è¯æ¡†çš„çˆ¶å®¹å™¨ã€çª—ä½“æ ‡é¢˜å’Œç±»å‹
+		super(frame,"ç¬¬ä¸€ä¸ªJDialogçª—ä½“",true);
 		Container container = getContentPane();
-		container.add(new JLabel("ÕâÊÇÒ»¸ö¶Ô»°¿ò"));
+		container.add(new JLabel("è¿™æ˜¯ä¸€ä¸ªå¯¹è¯æ¡†"));
 		setBounds(120, 120, 100, 100);
 	}
 

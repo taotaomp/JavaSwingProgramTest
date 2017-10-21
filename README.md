@@ -1,4 +1,4 @@
-#JavaSwingProgramTest
-##13.2 ³£ÓÃ´°Ìå
-*1.Example13_1
-*2.Example13_2
+ï»¿#JavaSwingProgramTest
+##13.2 å¸¸ç”¨çª—ä½“
+* 1.Example13_1
+* 2.Example13_2
